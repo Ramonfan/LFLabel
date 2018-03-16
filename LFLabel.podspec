@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "LFLabel"
   s.version      = "0.0.1"
-  s.summary      = "A short description of LFLabel."
+  s.summary      = "A high performance LFLabel."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  				   Guide for public pods
                    DESC
 
-  s.homepage     = "http://EXAMPLE/LFLabel"
+  s.homepage     = "https://github.com/Ramonfan/LFLabel"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -55,7 +56,7 @@ Pod::Spec.new do |s|
   s.author             = { "Ramonfan" => "fqmlemon@sina.com" }
   # Or just: s.author    = "Ramonfan"
   # s.authors            = { "Ramonfan" => "fqmlemon@sina.com" }
-  # s.social_media_url   = "http://twitter.com/Ramonfan"
+  s.social_media_url   = "https://github.com/Ramonfan"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,12 +65,12 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
+  # s.watchos.deployment_targt = "2.0"
   # s.tvos.deployment_target = "9.0"
 
 
@@ -77,9 +78,9 @@ Pod::Spec.new do |s|
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
-  #
+  #https://github.com/Ramonfan
 
-  s.source       = { :git => "http://EXAMPLE/LFLabel.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Ramonfan/LFLabel.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "source/*.{h,m}"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -117,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -129,7 +130,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
