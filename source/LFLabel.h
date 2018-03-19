@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Reachability/Reachability.h>
 
 @interface LFLabel : UIView
 

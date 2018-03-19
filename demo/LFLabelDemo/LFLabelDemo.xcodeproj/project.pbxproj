@@ -15,6 +15,7 @@
 		182128EE205BC266005EB4F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182128ED205BC266005EB4F7 /* main.m */; };
 		182128F8205BC266005EB4F7 /* LFLabelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182128F7205BC266005EB4F7 /* LFLabelDemoTests.m */; };
 		18212905205BC294005EB4F7 /* LFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18212904205BC294005EB4F7 /* LFLabel.m */; };
+		6D325CE478F1F9F1DB6524E2 /* Pods_LFLabelDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C689DCDC14413ADBE9AEC13 /* Pods_LFLabelDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,9 @@
 		182128F9205BC266005EB4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18212903205BC294005EB4F7 /* LFLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLabel.h; sourceTree = "<group>"; };
 		18212904205BC294005EB4F7 /* LFLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLabel.m; sourceTree = "<group>"; };
+		44BAA47938499214D5C7384B /* Pods-LFLabelDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLabelDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFLabelDemo/Pods-LFLabelDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6C689DCDC14413ADBE9AEC13 /* Pods_LFLabelDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LFLabelDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8F148150C52673754CB61F /* Pods-LFLabelDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFLabelDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFLabelDemo/Pods-LFLabelDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D325CE478F1F9F1DB6524E2 /* Pods_LFLabelDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ED6C805D23DB19BF9679148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C689DCDC14413ADBE9AEC13 /* Pods_LFLabelDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		182128D2205BC266005EB4F7 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +83,8 @@
 				182128DD205BC266005EB4F7 /* LFLabelDemo */,
 				182128F6205BC266005EB4F7 /* LFLabelDemoTests */,
 				182128DC205BC266005EB4F7 /* Products */,
+				BEC08EBCE33A08171AB0F387 /* Pods */,
+				0ED6C805D23DB19BF9679148 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +132,15 @@
 			path = ../../source;
 			sourceTree = "<group>";
 		};
+		BEC08EBCE33A08171AB0F387 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44BAA47938499214D5C7384B /* Pods-LFLabelDemo.debug.xcconfig */,
+				CA8F148150C52673754CB61F /* Pods-LFLabelDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 182128FC205BC266005EB4F7 /* Build configuration list for PBXNativeTarget "LFLabelDemo" */;
 			buildPhases = (
+				A1A636287270694A1FF25921 /* [CP] Check Pods Manifest.lock */,
 				182128D7205BC266005EB4F7 /* Sources */,
 				182128D8205BC266005EB4F7 /* Frameworks */,
 				182128D9205BC266005EB4F7 /* Resources */,
+				223377998EB3D713945F8F87 /* [CP] Embed Pods Frameworks */,
+				53094291DCABF59EBD4C8D9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +240,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		223377998EB3D713945F8F87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LFLabelDemo/Pods-LFLabelDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LFLabelDemo/Pods-LFLabelDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53094291DCABF59EBD4C8D9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LFLabelDemo/Pods-LFLabelDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A636287270694A1FF25921 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LFLabelDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		182128D7205BC266005EB4F7 /* Sources */ = {
@@ -370,6 +451,7 @@
 		};
 		182128FD205BC266005EB4F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BAA47938499214D5C7384B /* Pods-LFLabelDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +466,7 @@
 		};
 		182128FE205BC266005EB4F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8F148150C52673754CB61F /* Pods-LFLabelDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
