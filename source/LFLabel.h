@@ -11,5 +11,7 @@
 @interface LFLabel : UIView
 
 @property (nonatomic, copy) NSString *text;
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, strong) UIFont *font;
 
 @end
